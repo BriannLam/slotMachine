@@ -11,17 +11,17 @@ const prompt = require("prompt-sync")();
 const ROWS = 3;
 const COLS = 3;
 const SYMBOLS_COUNT = {
-    A: 2,
-    B: 4,
-    C: 6,
-    D: 8
+    A: 4,
+    B: 6,
+    C: 8,
+    D: 10
 }
 
 const SYMBOLS_VALUES = {
-    A: 5, 
-    B: 4,
-    C: 3, 
-    D: 2
+    A: 20, 
+    B: 10,
+    C: 5, 
+    D: 0
 }
 
 
@@ -115,7 +115,7 @@ function printSlot(rows){
 
 function getWinnings(rows, bet, lines){
     let winnings = 0;
-    for(let row = 0; row <lines; row++){
+    for(let row = 0; row < lines; row++){
         const symbols = rows[row];
         let allSame = true;
         for(const symbol of symbols){
@@ -125,7 +125,7 @@ function getWinnings(rows, bet, lines){
             }
         }
         if(allSame){
-            winnings += bet*SYMBOLS_VALUES[symbols[0]]
+            winnings += bet+SYMBOLS_VALUES[symbols[0]]
         }
     }
     return winnings;
