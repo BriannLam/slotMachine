@@ -27,7 +27,7 @@ const SYMBOLS_VALUES = {
 
 function deposit(){
     while(true){
-        const depositAmount = prompt("Enter a deposit amount: ");
+        const depositAmount = document.getElementById('deposit');
         const numberDepositAmount = parseFloat(depositAmount);
 
         if(isNaN(numberDepositAmount) || numberDepositAmount <= 0){

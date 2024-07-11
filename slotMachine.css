@@ -1,0 +1,35 @@
+body{
+    /* background-color: black; */
+    overflow: hidden;
+    background-color: black;
+    
+
+}
+
+
+
+.intro{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.smLocation{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slotMachine{
+    width: 40vw;
+    height: 60vh;
+
+}
