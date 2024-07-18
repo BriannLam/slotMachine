@@ -1,9 +1,15 @@
 body {
+    background-color: #000;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
+    color: white    ;
 }
 
+
+h1{
+    font-size: 10vh;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -15,6 +21,7 @@ body, html {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: -1;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -30,9 +37,10 @@ body, html {
 }
 
 .Adeposit, .Aline, .Abet, .Amoney {
+    position: absolute;
     margin: 5px 0; /* Adds some space between the alert messages */
+    display: none;
 }
-
 
 
 .game-container {
@@ -46,3 +54,4 @@ body, html {
 .slot-reels div {
     margin: 5px 0;
 }
+

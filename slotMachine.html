@@ -16,27 +16,27 @@
         </div>
     </div>
     
-    <div class="game-container">
-        <h1>Slot Machine Game</h1>
-        <div>
-            <label for="depositAmount">Enter a deposit amount:</label>
-            <input type="number" id="depositAmount" min="1">
-            <button onclick="deposit()">Deposit</button>
-        </div>
-        <div>
-            <label for="numberOfLines">Enter the number of lines you want to bet on (1-3):</label>
-            <input type="number" id="numberOfLines" min="1" max="3">
-            <button onclick="getNumberOfLines()">Set Lines</button>
-        </div>
-        <div>
-            <label for="betAmount">Enter the bet per line:</label>
-            <input type="number" id="betAmount" min="1">
-            <button onclick="placeBet()">Place Bet</button>
-        </div>
-        <div class="slot-reels" id="slotReels"></div>
-        <div id="gameResult"></div>
-        <button onclick="spin()">Spin</button>
+    <h1>Slot Machine Game</h1>
+    <div>
+        <label for="depositAmount">Enter a deposit amount:</label>
+        <input type="number" id="depositAmount" min="1">
+        <button id="setDesposit">Deposit</button>
     </div>
+    <div>
+        <label for="numberOfLines">Enter the number of lines you want to bet on (1-3):</label>
+        <input type="number" id="numberOfLines" min="1" max="3">
+        <button id="setLines">Set Lines</button>
+    </div>
+    <div>
+        <label for="betAmount">Enter the bet per line:</label>
+        <input type="number" id="betAmount" min="1">
+        <button id="placeBet">Place Bet</button>
+    </div>
+    <div class="slot-reels" id="slotReels"></div>
+    <div id="gameResult"></div>
+    <button id='spinBtn' >Spin</button>
+
+
 
     <script src="slotMachine.js"></script>
 </body>
